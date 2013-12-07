@@ -44,7 +44,7 @@
                     <li><a href="#">Other Projects</a></li>
                   </ul>
                 </li>
-                 <li class="dropdown">
+                  <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="login_user.html">User Login</a></li>
@@ -56,12 +56,27 @@
             </div>
           </div>
         
-        <h1 style="text-align:center">Club Login</h1>
+        <h1 style="text-align:center">User Registration</h1>
         <!-- needs to be tweaked so that all the boxes line up properly -->
-        <form class="form-horizontal" style="text-align:center">
-<fieldset>
-
+        <fieldset>
+<form class="form-horizontal" style="text-align:center">
 <!-- Text input-->
+<!-- Firt name-->
+<div class="control-group">
+  <label class="control-label" for="textinput"></label>
+  <div class="controls">
+    <input id="firstname" name="firstname" type="text" placeholder="First Name" class="input-xlarge">
+    
+<!-- Last Name-->
+  </div>
+</div>
+    <div class="control-group">
+  <label class="control-label" for="textinput"></label>
+  <div class="controls">
+    <input id="lastname" name="lastname" type="text" placeholder="Last Name" class="input-xlarge">
+    
+  </div>
+</div>
 <div class="control-group">
   <label class="control-label" for="textinput"></label>
   <div class="controls">
@@ -78,24 +93,21 @@
     
   </div>
 </div>
-    
-<!-- Name input
-<div class="control-group">
-  <label class="control-label" for="textinput"></label>
-  <div class="controls">
-    <input id="textinput" name="member" type="text" placeholder="Member Name" class="input-xlarge">-->
 
+<div class="control-group">
+  <label class="control-label" for="passwordinput"></label>
+  <div class="controls">
+    <input id="passwordconfirm" name="passwordconfirm" type="password" placeholder="Confirm Password" class="input-xlarge">
+    
+  </div>
+</div>
 <!-- Button -->
 <div class="control-group">
   <label class="control-label" for="singlebutton"></label>
   <div class="controls">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Login!</button>
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Register!</button>
   </div>
 </div>
-
-</fieldset>
-</form>
-
         
                 <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -104,6 +116,6 @@
         <script src="js/bootstrap.js"></script>
         <script src="js/boostrap.min.js"></script>
         
-        
+        </form>
     </body>
 </html> 
