@@ -12,7 +12,7 @@
     <![endif]-->
         <style type="text/css">
             body{
-                background-color:#FFCC33;
+                background-image:url('img/IMG_1.jpg');
                 background-size: 100% 100%;
                 }
         </style>
@@ -31,7 +31,7 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.hmtl">My Events</a></li>
                 <li><a href="contact.hmtl">Schools</a></li>
                 <li><a href="http://tembot.tumblr.com/CV">Browse Events</a></li>
@@ -44,10 +44,11 @@
                     <li><a href="#">Other Projects</a></li>
                   </ul>
                 </li>
-                 <li class="dropdown">
+                 <li class="dropdown; active">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="login_user.html">User Login</a></li>
+                    <li><a href="sign_up.html">Club Login!</a></li>  
                     <li><a href="sign_up.html">Register!</a></li>
                   </ul>
                 </li>
@@ -56,45 +57,49 @@
             </div>
           </div>
         
-        <h1 style="text-align:center">Club Login</h1>
+        <div class="container">
+            <h1 style="text-align:center; color:white">Club Login</h1>
         <!-- needs to be tweaked so that all the boxes line up properly -->
         <form class="form-horizontal" style="text-align:center">
-<fieldset>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="textinput"></label>
-  <div class="controls">
-    <input id="textinput" name="textinput" type="text" placeholder="Username" class="input-xlarge">
-    
-  </div>
-</div>
-
-<!-- Password input-->
-<div class="control-group">
-  <label class="control-label" for="passwordinput"></label>
-  <div class="controls">
-    <input id="passwordinput" name="passwordinput" type="password" placeholder="Password" class="input-xlarge">
-    
-  </div>
-</div>
-    
-<!-- Name input
-<div class="control-group">
-  <label class="control-label" for="textinput"></label>
-  <div class="controls">
-    <input id="textinput" name="member" type="text" placeholder="Member Name" class="input-xlarge">-->
-
-<!-- Button -->
-<div class="control-group">
-  <label class="control-label" for="singlebutton"></label>
-  <div class="controls">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Login!</button>
-  </div>
-</div>
-
-</fieldset>
-</form>
+        <fieldset>
+        
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="textinput"></label>
+          <div class="controls">
+            <input id="textinput" name="textinput" type="text" placeholder="Username" class="input-xlarge">
+            
+          </div>
+        </div>
+        
+        <!-- Password input-->
+        <div class="control-group">
+          <label class="control-label" for="passwordinput"></label>
+          <div class="controls">
+            <input id="passwordinput" name="passwordinput" type="password" placeholder="Password" class="input-xlarge">
+            
+          </div>
+        </div>
+            
+        <!-- Name input
+        <div class="control-group">
+          <label class="control-label" for="textinput"></label>
+          <div class="controls">
+            <input id="textinput" name="member" type="text" placeholder="Member Name" class="input-xlarge">-->
+        
+        <!-- Button -->
+        <div class="control-group">
+          <label class="control-label" for="singlebutton"></label>
+          <div class="controls">
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Login!</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+        </div>
+        
+        
 
         
                 <!-- Bootstrap core JavaScript
