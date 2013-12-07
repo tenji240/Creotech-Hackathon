@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">    
     <head>
     
@@ -34,7 +35,7 @@
     
     <body>
          <!-- Static navbar -->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-default" role="navigation">
             
             <div class="container">
                 
@@ -49,8 +50,8 @@
                 
                 <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="about.hmtl">My Events</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">My Events</a></li>
                     <li><a href="contact.hmtl">Schools</a></li>
                     <li><a href="http://tembot.tumblr.com/CV">Browse Events</a></li>
                     <li class="dropdown">
@@ -70,31 +71,43 @@
         <!--list of events-->
         
         <div class="container">
-            
-            <div class="container">
-                <div class="jumbotron">
-                    <h1 id="eventName">Event!</h1>
-                    <p id="eventDescrp">This is an desription of the event</p>
-                    <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
-                </div>
+            <div class="jumbotron">
+                <table class="table table-stripped" style="background-color:#FFF; box-shadow: 10px 10px 5px #888888">
+                <thead>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Organization</th>
+                    <th>Time</th>
+                </thead> 
+                
+                <tbody>
+                    <tr>
+                        <td>1/1</td>
+                        <td>Tank</td>
+                        <td>base</td>
+                        <td>12:13</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>1/1</td>
+                        <td>Tank</td>
+                        <td>base</td>
+                        <td>12:13</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>1/1</td>
+                        <td>Tank</td>
+                        <td>base</td>
+                        <td>12:13</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
             </div>
-            
-            <div class="container">
-                <div class="jumbotron">
-                    <h1 id="eventName">Event Again!</h1>
-                    <p id="eventDescrp">This is an desription of the event</p>
-                    <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
-                </div>
-            </div>
-            
-            <div class="container">
-                <div class="jumbotron">
-                    <h1 id="eventName">Even more Events!</h1>
-                    <p id="eventDescrp">This is an desription of the event</p>
-                    <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
-                </div>
-            </div>   
         </div>
+        
+        <!--table script-->
         
         
     <!-- Bootstrap core JavaScript
