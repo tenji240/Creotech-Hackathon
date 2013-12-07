@@ -14,8 +14,10 @@ $.get("http://jsonp.jit.su/?raw=true&url=http%3A%2F%2Fmy.umbc.edu%2Fevents.xml",
 //	table.appendChild(element);
     strings = strings.concat("<tr>");
 	strings = strings.concat("<td>" + title_result[1] + "</td>");
-	strings = strings.concat("<td> " + date_result[1] + "</td>");
-	strings = strings.concat("<td> " + end_result[1] + "</td>");
+	date = new Date(date_result[1]);
+	strings = strings.concat("<td> " + date.toDateString() + "</td>");
+	end = new Date(end_result[1]);
+	strings = strings.concat("<td> " + end.toDateString() + "</td>");
 	strings = strings.concat("</tr>");
 	end_result = enddate.exec(data);
 	title_result = title_regex.exec(data);
