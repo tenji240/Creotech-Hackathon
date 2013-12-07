@@ -58,12 +58,44 @@
         
         <h1 style="text-align:center">Club Login</h1>
         <!-- needs to be tweaked so that all the boxes line up properly -->
-        <form action="demo_form.asp"; style="text-align:center">
-            Username: <input type="text" name="username"><br>
-            Password: <input type="password" name="password"><br>
-            Club Member Name: <input type="text" name="member"><br>
-          <input type="submit" value="Login">
-        </form>
+        <form class="form-horizontal" style="text-align:center">
+<fieldset>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput"></label>
+  <div class="controls">
+    <input id="textinput" name="textinput" type="text" placeholder="Username" class="input-xlarge">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="control-group">
+  <label class="control-label" for="passwordinput"></label>
+  <div class="controls">
+    <input id="passwordinput" name="passwordinput" type="password" placeholder="Password" class="input-xlarge">
+    
+  </div>
+</div>
+    
+<!-- Name input-->
+<div class="control-group">
+  <label class="control-label" for="textinput"></label>
+  <div class="controls">
+    <input id="textinput" name="member" type="text" placeholder="Member Name" class="input-xlarge">
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="singlebutton"></label>
+  <div class="controls">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Login!</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
         
                 <!-- Bootstrap core JavaScript
         ================================================== -->
