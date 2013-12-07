@@ -15,9 +15,21 @@ $.get("http://jsonp.jit.su/?raw=true&url=http%3A%2F%2Fmy.umbc.edu%2Fevents.xml",
     strings = strings.concat("<tr>");
 	strings = strings.concat("<td>" + title_result[1] + "</td>");
 	date = new Date(date_result[1]);
-	strings = strings.concat("<td> " + date.toDateString() + "</td>");
+//	strings = strings.concat("<td> " + date.toDateString() + "</td>");
+    var str;
+   // var day = date.substring(1,4);
+    var utc = date.toUTCString();
+    var m = utc.substring(7,11);
+    var full = date.getUTCFullYear();
+    var short = full.toString();
+    str = (date.getMonth()+1) + "/"+ date.getUTCDate()+"/"+ short.substring(2,4);
+        
+    strings = strings.concat("<td>" + str +"</td>");
+        
 	end = new Date(end_result[1]);
-	strings = strings.concat("<td> " + end.toDateString() + "</td>");
+//	strings = strings.concat("<td> " + end.toDateString() + "</td>");
+    str = (end.getMonth()+1) + "/"+ end.getUTCDate()+"/"+ short.substring(2,4);
+    strings = strings.concat("<td>" + str +"</td>");
 	strings = strings.concat("</tr>");
 	end_result = enddate.exec(data);
 	title_result = title_regex.exec(data);
