@@ -23,6 +23,3 @@ $.get("http://jsonp.jit.su/?raw=true&url=http%3A%2F%2Fmy.umbc.edu%2Fevents.xml",
 }
 table.innerHTML = strings;
 });
-
-navigator.notification.alert(
-    'WINNER');
