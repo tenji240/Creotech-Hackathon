@@ -29,14 +29,14 @@
     <script>
     function showAlert()
     {
-    alert("You WIN");
+    alert("Warning. You will be Redirected.");
     }
     </script>
   </head>
 
   <body>
        <!-- Static navbar -->
-    <div class="navbar navbar-default">
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -76,15 +76,31 @@
 
     <div class="container">
       <!-- Main component for a primary marketing message or call to action -->
-    
+        <h1 style="color:transparent">blah</h1> <!--to add some space-->
+        
         <div class="jumbotron">
             <h1>Welcome to Present</h1>
             <p>Present is application designed to provide you with local college events.</p>
             <p>
-            <a class="btn btn-lg btn-primary" href="#" onclick = "showAlert();">Get started Today! »</a>
+            <a class="btn btn-lg btn-primary" href="#" onclick = "showAlert();">Sign Up Today! »</a>
             </p>
         </div>
-
+        
+        <div class="jumbotron" style="background-color:transparent">
+            <h1>Top Trending Event</h1>
+            <p style="float:left">This is a random event going on today.</p>
+            <p>
+            <a class="btn btn-lg btn-primary" href="http://my.umbc.edu/events" onclick = "showAlert();" style="float:right">Learn More Here»</a>
+            </p>
+        </div>
+        
+        <div class="jumbotron" style="background-color:transparent">
+            <h1>Social Events</h1>
+            <p style="float:left">Check out our social events on Present.</p>
+            <p>
+            <a class="btn btn-lg btn-primary" href="social.html" style="float:right">Find More Events »</a>
+            </p>
+        </div>
 
     </div> <!-- /container -->
 
